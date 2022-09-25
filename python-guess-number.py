@@ -6,6 +6,7 @@ while (usr != 'q'):
   if (usr == ans):
     print(f"You guessed the number correctly after {tries} times.")
     break
-  tries = tries + 1
-  usr = input("Guess the number (or 'q' to quit): ")
-  usr = int(usr)
+  else:
+    tries = tries + 1
+    usr = input("Guess the number (or 'q' to quit): ")
+    if (usr != 'q'): usr = int(usr)
